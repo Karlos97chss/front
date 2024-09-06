@@ -1,4 +1,5 @@
 import BotaoSubmit from "../src/components/BotaoSubmit";
+import Conteudo from "../src/components/Conteudo";
 import InputSenha from "../src/components/InputSenha";
 import InputUsuario from "../src/components/InputUsuario";
 import Link from "../src/components/Link";
@@ -13,7 +14,7 @@ function Login(){
 
     return (
         <>
-        <main className="login-form"> 
+        <Conteudo estilo="login-form"> 
             <Logo imagem={urlLogo} texto={textoLogo} />
             <Titulo texto="Aluno Online"/>
             <InputUsuario/>
@@ -22,7 +23,7 @@ function Login(){
             <Link texto="Esqueceu a Senha"/>
             <Link texto="Criar uma Conta"/>
 
-        </main>
+        </Conteudo>
             <Rodape/>
         </>
     );

@@ -1,9 +1,13 @@
 import Login from "../pages/Login";
-import Logo from "./components/Logo";
+import Home from "../pages/Home";
 
 function App() {
+  const index = 2;
   return (
-    <Login/>
+    <>
+      {index == 1 && <Login />}
+      {index == 2 && <Home />}
+    </>
   );
 }
 
