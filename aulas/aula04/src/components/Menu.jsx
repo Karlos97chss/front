@@ -11,7 +11,7 @@ function Menu() {
             <Link texto={opcao} />
           </li>
         ))}
-      </ul>
+      </ul> 
     </nav>
   );
 }
