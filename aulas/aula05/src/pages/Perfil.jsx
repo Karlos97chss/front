@@ -4,7 +4,7 @@ function Perfil(props) {
   return (
     <>
       <h1>Perfil do Usuario</h1>
-      <Menu />
+      <Menu navegaPara={props.navegaPara}/>
     </>
   );
 }
