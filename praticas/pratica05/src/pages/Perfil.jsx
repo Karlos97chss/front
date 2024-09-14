@@ -1,18 +1,24 @@
 import Cabecalho from "../components/Cabecalho";
 import Conteudo from "../components/Conteudo";
-import Menu from './Menu';
-import Secao from './Secao';
-import InputEmail from './InputEmail';
-import InputSenha from './InputSenha';
-import Botao from './Botao';
+import Menu from "../components/Menu";
+import Secao from "../components/Secao";
+import InputEmail from "../components/InputEmail";
+import InputSenha from "../components/InputSenha";
+import Botao from "../components/Botao";
 
 function Perfil() {
-    return (
-     <>
-     <Cabecalho></Cabecalho>
-<Conteudo></Conteudo>
-</>
-    );
-  }
-  export default Perfil;
-  
+  return (
+    <>
+      <Cabecalho/>
+      <Conteudo>
+        <Menu />
+        <Secao texto="Perfil do Usuário">
+          <InputEmail />
+          <InputSenha />
+          <Botao texto="Salvar" />
+        </Secao>
+      </Conteudo>
+    </>
+  );
+}
+export default Perfil;
