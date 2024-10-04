@@ -1,6 +1,6 @@
 function InputEmail({ register, error }) {
   const regras = {
-    required: { value: true, message: "Email é obrigatório" },
+    required: { value: true, message: "Email é obrigatorio" },
     pattern: {
       value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
       message: "Formato invalido do email",

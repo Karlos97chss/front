@@ -15,7 +15,7 @@ function FormPerfil() {
       <InputNome register={register} error={errors.nome} />
       <InputEmail register={register} error={errors.email} />
       <InputSenha register={register} error={errors.senha} />
-      <button>Entrar</button>
+      <button>Salvar</button>
     </form>
   );
 }
