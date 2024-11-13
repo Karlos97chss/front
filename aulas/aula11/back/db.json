@@ -1,0 +1,19 @@
+{
+  "users": [
+    {
+      "email": "jose@iesb.br",
+      "password": "$2a$10$R7v7H3zsa6y1bKEFwxkPKedSR.rvs8kKRA8TxbjEBaZOK5owFdrAe",
+      "id": 1
+    },
+    {
+      "email": "eu@iesb.br",
+      "password": "$2a$10$jEmBx4BAxVdMMhLiO.J6QOXGee.SONzPf/lfCtA3o615FKrgjSxhy",
+      "id": 2
+    },
+    {
+      "email": "carlos@iesb.br",
+      "password": "$2a$10$la87JLwpUL.8qqnqUXu/l.cid7tQ9KpyMQWR/DZND6iZYOLTgHG3u",
+      "id": 3
+    }
+  ]
+}
