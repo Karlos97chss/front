@@ -1,0 +1,34 @@
+import React, { useState, useContext } from "react";
+import { useNavigate, Link } from "react-router-dom";
+import { AuthContext } from "../contexts/AuthContext";
+import Formulario from "./Formulario";
+
+const Registrar = () => {
+  const [erro, setErro] = useState("");
+
+  const navigate = useNavigate();
+
+  const { signup } = useContext(AuthContext);
+
+  const onConfirmar = async (data) => {
+    const resultado = await signup(data);
+
+    if (resultado) {
+      setErro(resultado);
+    } else {
+      setErro("");
+      navigate("/home");
+    }
+  };
+
+  return (
+    <div>
+      <h1>Registrar</h1>
+      {erro && <p>{erro}</p>}
+      <Formulario onEnviar={onConfirmar} texto="Confirmar" />
+      <Link to="/login">Voltar</Link>
+    </div>
+  );
+};
+
+export default Registrar;
